@@ -1,9 +1,0 @@
-pre-requisites - https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/prerequisites.html
-
-install AWS CLI
-
-configure AWS sdk using CLI
-
-learn the AWS sdk 
-
-learn SAM(Serverless Application Model) - https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started.html
