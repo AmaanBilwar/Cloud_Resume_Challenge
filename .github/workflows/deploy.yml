@@ -21,12 +21,12 @@ jobs:
         aws-region: YOUR_AWS_REGION
 
     - name: Copy index.html to S3
-      run: aws s3 cp src/index.html s3://$S3_BUCKET/index.html
+      run: aws s3 cp src/index.html s3://${{ secrets.S3_BUCKET }}/index.html
       env:
         S3_BUCKET: ${{ secrets.S3_BUCKET }}
 
     - name: Copy output.css to S3
-      run: aws s3 cp src/output.css s3://$S3_BUCKET/output.css
+      run: aws s3 cp src/output.css s3://${{ secrets.S3_BUCKET }}/output.css
       env:
         S3_BUCKET: ${{ secrets.S3_BUCKET }}
 
