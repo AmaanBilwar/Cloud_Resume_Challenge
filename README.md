@@ -1,11 +1,6 @@
 Table of Contents: 
 
-| Sr. no. | Topic               | Resources |   |   |
-|---------|---------------------|-----------|---|:-:|
-| 1       | What even is this?  | [link](# What even is this?)           |   |   |
-|         |                     |           |   |   |
-|         |                     |           |   |   |
-
+Coming Soon.....
 
 
 # What even is this?
