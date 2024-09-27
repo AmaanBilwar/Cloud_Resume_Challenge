@@ -644,6 +644,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-0\.5 {
+  padding-left: 0.125rem;
+}
+
 .font-fira {
   font-family: Fira Code Medium, sans-serif;
 }
