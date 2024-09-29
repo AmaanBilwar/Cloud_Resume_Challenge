@@ -1,27 +1,40 @@
+
+
 Table of Contents: 
 
 Coming Soon.....
 
 
+My "**Resume**" for this challenge is hosted at [this link](https://df351d981p1bv.cloudfront.net) with **AWS S3, Cloudfront and a sweet Github Actions CI/CD pipleine** 😃
+
+
+
 # What even is this?
 
-The **Cloud Resume Challenge** is desgined by Forrest Brazeal to help people learn cloud technologies(AWS in my case) through hands-on project. The challenge guides u to build and deploy a cloud-base resume using a variety of AWS Services.
+The **Cloud Resume Challenge** is desgined by **Forrest Brazeal** to help people learn "cloud technologies" (AWS in my case) through a hands-on project. The challenge guides u to build and deploy a cloud-base resume using a variety of AWS Services.
 
 Additional Information can be found in this [link](https://cloudresumechallenge.dev/) 
 
-Extra work: 
+# Requirements for the Challenge
 
-Problem: Had to manually update the files in the AWS S3 bucket after every minor change that was made/pushed to github.
 
-Solution: Made a CI/CD pipeline using Github Actions and AWS IAM to make it easier to have the updates automatically in my AWS S3 bucket.
 
-Explanation/Execution: 
+#### Extra work outside of the challenge requirements: 
+
+#### Problem:
+
+ Had to manually update the files in the AWS S3 bucket after every minor change that was made/pushed to github.
+
+#### Solution:
+ Made a CI/CD pipeline using Github Actions and AWS IAM to make it easier to have the updates automatically in my AWS S3 bucket.
+
+#### Explanation/Execution: 
 
 1. Made an AWS IAM user and gave full access to my S3 and Cloudfront services.
 2. Got the required secret keys and variables needed. 
 3. Added the secrets to Github repo secrets to be used later in the yaml file.
 4. Create a Github action by making ".github/workflows/deploy.yml" file and writing the required code to allow me to access the AWS services using the CDK.
-5. Code allows me to access and upload only index.html and output.css(generated via tailwind css) to my S3 bucket after verifying authorization. Also invalidates the cache in Cloudfront to make the changes immediate.
+5. this YAML Code allows me to access and upload only index.html and output.css(generated via tailwind css) to my S3 bucket after verifying authorization. Also invalidates the cache in Cloudfront to make the changes immediate.
 ``` 
 name: Deploy to S3
 
@@ -61,8 +74,8 @@ jobs:
 ```
 6. **You're Done**. This is all you need. Now every time you push your code Github Actions verifies the code and directly makes the necessary changes to the S3 bucket and Cloudfront services. 
 
+**Would add a unit tests if application requires it**  
+
+
 Challenges: 
 
-
-
-my resume website for this challenge is hosted at [this link](https://df351d981p1bv.cloudfront.net) with AWS S3 bucket and AWS Cloudfront :))
